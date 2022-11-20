@@ -1,1 +1,1 @@
-web: gunicorn neironka.wsgi:application --log-file - --log-level debug
+web: gunicorn gettingstarted.wsgi --log-file - --log-level debug
