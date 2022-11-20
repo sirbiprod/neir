@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi --log-file - --log-level debug
+web: gunicorn neir.wsgi --log-file - --log-level debug
