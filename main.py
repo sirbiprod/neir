@@ -7,6 +7,7 @@ import PIL
 from PIL import Image
 #import Pillow
 #import cv2
+from pdf2image import convert_from_path
 
 
 
