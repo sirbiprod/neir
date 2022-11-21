@@ -2,7 +2,9 @@ import os.path
 #os.system("pip.bat")
 #import easyocr
 import pytesseract
+import PIL
 from PIL import Image
+#import Pillow
 #import cv2
 
 
@@ -29,7 +31,7 @@ def save_text(text, name):
 
 #   функция main
 def main():
-    path_img = os.system("images\1-1.png")
+    path_img = os.system("images/1-1.png")
     #if path_img == "x":
     #    exit(0)
     #if not os.path.exists(path_img):
