@@ -1,7 +1,7 @@
 import os.path
 import os
 #os.system("pip.bat")
-import easyocr
+#import easyocr
 import pytesseract
 import PIL
 from PIL import Image
