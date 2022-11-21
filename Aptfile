@@ -6,4 +6,4 @@ build-essential
 libpoppler-cpp-dev 
 pkg-config 
 python3-dev
-libpng12.so.0
+libpng12-0
