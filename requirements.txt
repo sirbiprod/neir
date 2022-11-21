@@ -8,4 +8,4 @@ whitenoise==6.2.0
 pip
 Pillow
 pytesseract
-easyocr
+

@@ -1,10 +1,11 @@
 import os.path
+import os
 #os.system("pip.bat")
 import easyocr
 import pytesseract
 import PIL
 from PIL import Image
-import Pillow
+#import Pillow
 import cv2
 
 
@@ -13,11 +14,11 @@ import cv2
 
 #   функция для распознавания текста на изображении
 def teseract_recognition(path_img):
-    return pytesseract.image_to_string(Image.open(path_img), lang='rus+eng', config=r'--oem 3 --psm 6')
+    return pytesseract.image_to_string(Image.open(path_img), lang='eng', config=r'--oem 3 --psm 6')
 
 #   путь к файлу
-def easyocr_recognition(path_img):
-    return easyocr.Reader(["ru"]).readtext(path_img, detail=0, paragraph=True, text_threshold=0.8)
+#def easyocr_recognition(path_img):
+#    return easyocr.Reader(["ru"]).readtext(path_img, detail=0, paragraph=True, text_threshold=0.8)
 
 #   функция сохранения текста в файл
 def save_text(text, name):
@@ -42,7 +43,8 @@ def main():
     if user_change == "1":
         save_text(teseract_recognition(path_img), os.path.split(path_img)[1].split(".")[0])
     elif user_change == '2':
-        save_text(easyocr_recognition(path_img), os.path.split(path_img)[1].split(".")[0])
+        #save_text(easyocr_recognition(path_img), os.path.split(path_img)[1].split(".")[0])
+        print("я не работаю")
     elif user_change == "3":
         exit(0)
     else:
