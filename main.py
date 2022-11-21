@@ -6,7 +6,7 @@ import pytesseract
 import PIL
 from PIL import Image
 #import Pillow
-import cv2
+#import cv2
 
 
 
